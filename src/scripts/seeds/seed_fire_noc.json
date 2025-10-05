@@ -1,0 +1,13 @@
+[
+  {
+    "doc_type": "FIRE_NOC",
+    "raw_id": "FIRE-KOL-2023-001234",
+    "id_masked": "FIRE-2023-1234",
+    "canonical_name": "kolkata fire department",
+    "certificate_no": "FIRE-2023-001234",
+    "issue_date": "2023-03-10",
+    "valid_upto": "2026-03-09",
+    "address": "Fire Brigade HQ, Kolkata",
+    "source": "seed_2025_10_06"
+  }
+]

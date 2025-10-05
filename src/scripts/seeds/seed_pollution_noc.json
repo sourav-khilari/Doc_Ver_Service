@@ -1,0 +1,13 @@
+[
+  {
+    "doc_type": "POLLUTION_NOC",
+    "raw_id": "WBPCB-2022-CON-9876",
+    "id_masked": "WBPCB-9876",
+    "canonical_name": "west bengal pollution control board",
+    "certificate_no": "WBPCB-2022-CON-9876",
+    "issue_date": "2022-07-01",
+    "valid_upto": "2025-06-30",
+    "address": "Salt Lake, Kolkata",
+    "source": "seed_2025_10_06"
+  }
+]

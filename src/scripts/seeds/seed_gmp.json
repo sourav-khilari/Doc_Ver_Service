@@ -1,0 +1,40 @@
+[
+  {
+    "doc_type": "GMP",
+    "raw_id": "GMP-SCHEDT-001",
+    "id_masked": "GMP-001",
+    "canonical_name": "sourav ayush qc lab",
+    "raw": {
+      "lab_name": "Sourav Ayush QC Lab",
+      "certificate_no": "GMP-SCHEDT-001",
+      "scheme_name": "Schedule T",
+      "equipment_list": ["Stainless steel tanks", "Autoclave", "Weighing balance", "Mixer", "Drying oven"],
+      "issue_date": "2023-02-01",
+      "valid_upto": "2026-02-01",
+      "scope": "Manufacturing Ayurvedic classical & proprietary formulations"
+    },
+    "dob": "2023-02-01",
+    "scope": "Schedule T",
+    "address": "Industrial Area, Kolkata",
+    "source": "seed_2025_10_08"
+  },
+  {
+    "doc_type": "GMP",
+    "raw_id": "GMP-HOMEO-002",
+    "id_masked": "GMP-002",
+    "canonical_name": "ram homoeo lab",
+    "raw": {
+      "lab_name": "Ram Homoeo QC Lab",
+      "certificate_no": "GMP-HOMEO-002",
+      "scheme_name": "Homeopathy GMP",
+      "equipment_list": ["Potency room", "Weighing balance", "Glassware"],
+      "issue_date": "2021-07-01",
+      "valid_upto": "2024-07-01",
+      "scope": "Homeopathy mother tinctures"
+    },
+    "dob": "2021-07-01",
+    "scope": "Homeopathy GMP",
+    "address": "Some Street, Delhi",
+    "source": "seed_2025_10_08"
+  }
+]

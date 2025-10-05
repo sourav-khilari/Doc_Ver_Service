@@ -1,0 +1,24 @@
+[
+  {
+    "doc_type": "GST",
+    "raw_id": "19ABCDE1234F1Z5",
+    "id_masked": "19ABCDE1234F1Z5",
+    "canonical_name": "sourav ayush llp",
+    "trade_name": "sourav ayush",
+    "state_jurisdiction": "West Bengal",
+    "dob": "2020-08-01",
+    "principal_place_address": "Kolkata, West Bengal",
+    "source": "seed_2025_10_05"
+  },
+  {
+    "doc_type": "GST",
+    "raw_id": "07PQRST9876M1Z2",
+    "id_masked": "07PQRST9876M1Z2",
+    "canonical_name": "ram wellness private limited",
+    "trade_name": "ram wellness",
+    "state_jurisdiction": "Delhi",
+    "dob": "2019-03-12",
+    "principal_place_address": "New Delhi, Delhi",
+    "source": "seed_2025_10_05"
+  }
+]

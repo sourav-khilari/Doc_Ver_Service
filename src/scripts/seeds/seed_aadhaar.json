@@ -1,0 +1,20 @@
+[
+  {
+    "doc_type": "AADHAAR",
+    "raw_id": "123412341234",
+    "id_masked": "XXXX-XXXX-1234",
+    "canonical_name": "sourav kumar",
+    "dob": "1999-05-01",
+    "pincode": "700001",
+    "source": "seed_2025_10_04"
+  },
+  {
+    "doc_type": "AADHAAR",
+    "raw_id": "987698769876",
+    "id_masked": "XXXX-XXXX-9876",
+    "canonical_name": "ram singh",
+    "dob": "1985-02-02",
+    "pincode": "110001",
+    "source": "seed_2025_10_04"
+  }
+]

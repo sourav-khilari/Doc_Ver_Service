@@ -1,0 +1,36 @@
+[
+  {
+    "doc_type": "PRODUCT_DOSSIER",
+    "raw_id": "AYU-P-001",
+    "id_masked": "AYU-P-001",
+    "product_code": "AYU-P-001",
+    "product_name": "Herbal Digestive Syrup",
+    "category": "proprietary",
+    "dosage_form": "syrup",
+    "pack_size": "100ml",
+    "pharmacopoeia_ref": "API-AYU-2020",
+    "mfr_formula_ref": "MF-AYU-001",
+    "label_key_claims": ["improves digestion", "reduces acidity"],
+    "raw": {
+      "product_name": "Herbal Digestive Syrup",
+      "mfr_formula_ref": "MF-AYU-001",
+      "sops_present": true
+    },
+    "source": "seed_2025_10_09"
+  },
+  {
+    "doc_type": "PRODUCT_DOSSIER",
+    "raw_id": "AYU-C-002",
+    "id_masked": "AYU-C-002",
+    "product_code": "AYU-C-002",
+    "product_name": "Joint Pain Capsule",
+    "category": "classical",
+    "dosage_form": "capsule",
+    "pack_size": "60 capsules",
+    "pharmacopoeia_ref": "Classical-AYU",
+    "mfr_formula_ref": "MF-AYU-002",
+    "label_key_claims": ["supports joint mobility"],
+    "raw": { "sops_present": true },
+    "source": "seed_2025_10_09"
+  }
+]

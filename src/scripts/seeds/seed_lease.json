@@ -1,0 +1,24 @@
+[
+  {
+    "doc_type": "LEASE",
+    "lookup_key": "LEASE-001",
+    "raw_id": "lease-1-raw-id",
+    "id_masked": "LEASE-001",
+    "canonical_name": "rajesh kumar",    
+    "address": "123 MG Road, Kolkata, West Bengal",
+    "start_date": "2023-01-01",
+    "end_date": "2026-12-31",
+    "source": "seed_2025_10_06"
+  },
+  {
+    "doc_type": "LEASE",
+    "lookup_key": "LEASE-002",
+    "raw_id": "lease-2-raw-id",
+    "id_masked": "LEASE-002",
+    "canonical_name": "raj enterprises",
+    "address": "45 Park Street, Kolkata, West Bengal",
+    "start_date": "2022-05-01",
+    "end_date": "2024-04-30",
+    "source": "seed_2025_10_06"
+  }
+]

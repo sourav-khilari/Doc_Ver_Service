@@ -1,0 +1,131 @@
+curl -X POST http://localhost:8000/api/verify/lease \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: some-strong-key" \
+  -d '{
+    "request_id":"app-5002",
+    "submitted_by":"frontend-1",
+    "doc_type":"LEASE",
+    "extracted": {
+      "lessor_name":"Rajesh Kumar",
+      "lessee_name":"Sourav Ayush LLP",
+      "premises_address":"123 MG Road, Kolkata",
+      "start_date":"2023-01-01",
+      "end_date":"2026-12-31",
+      "ocr_confidence":0.85
+    }
+  }'
+
+
+
+curl -X POST http://localhost:8000/api/v1/verify/fire-noc \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: some-strong-key" \
+  -d '{
+    "request_id":"app-6001",
+    "submitted_by":"frontend-1",
+    "doc_type":"FIRE_NOC",
+    "extracted": {
+      "authority_name":"Kolkata Fire Department",
+      "certificate_no":"FIRE-2023-001234",
+      "issue_date":"2023-03-10",
+      "valid_upto":"2026-03-09",
+      "address":"Fire Brigade HQ, Kolkata",
+      "ocr_confidence":0.95
+    }
+  }'
+
+
+
+  curl -X POST http://localhost:8000/api/v1/verify/tech-cert \
+ -H "Content-Type: application/json" \
+ -H "x-api-key: some-strong-key" \
+ -d '{
+   "request_id":"app-7001",
+   "submitted_by":"frontend-1",
+   "doc_type":"TECH_CERT",
+   "extracted": {
+     "name":"Dr. Ramesh Kumar",
+     "registration_no":"BAMS-WB-12345",
+     "council_name":"West Bengal Ayurvedic Council",
+     "qualification":"BAMS",
+     "issue_date":"2012-05-10",
+     "valid_upto":"2027-05-09",
+     "ocr_confidence":0.94
+   }
+ }'
+
+
+curl -X POST http://localhost:8000/api/v1/verify/gmp \
+ -H "Content-Type: application/json" \
+ -H "x-api-key: some-strong-key" \
+ -d '{
+   "request_id":"app-8001",
+   "submitted_by":"frontend-1",
+   "doc_type":"GMP",
+   "extracted": {
+     "certificate_no":"GMP-SCHEDT-001",
+     "scheme_name":"Schedule T",
+     "lab_name":"Sourav Ayush QC Lab",
+     "equipment_list":["Stainless steel tanks","Autoclave","Weighing balance","Mixer","Drying oven"],
+     "issue_date":"2023-02-01",
+     "valid_upto":"2026-02-01",
+     "ocr_confidence":0.95
+   }
+ }'
+
+
+
+curl -X POST http://localhost:8000/api/v1/verify/product-dossier \
+ -H "Content-Type: application/json" \
+ -H "x-api-key: some-strong-key" \
+ -d '{
+   "request_id":"app-9001",
+   "submitted_by":"frontend-1",
+   "doc_type":"PRODUCT_DOSSIER",
+   "extracted": {
+     "product_code":"AYU-P-001",
+     "product_name":"Herbal Digestive Syrup",
+     "category":"proprietary",
+     "dosage_form":"syrup",
+     "mfr_formula_ref":"MF-AYU-001",
+     "label_key_claims":["improves digestion"],
+     "ocr_confidence":0.95
+   }
+ }'
+
+
+curl -X POST http://localhost:8000/api/v1/verify/moa \
+ -H "Content-Type: application/json" \
+ -H "x-api-key: some-strong-key" \
+ -d '{
+   "request_id":"app-moa-1001",
+   "submitted_by":"frontend-1",
+   "doc_type":"MOA",
+   "extracted": {
+     "entity_type":"LLP",
+     "directors_partners_list":[
+       {"name":"Sourav Kumar","id_type":"PAN","id_no_masked":"ABCDE1234F"},
+       {"name":"ram singh","id_type":"PAN","id_no_masked":"PQRST9876M"}
+     ],
+     "authorized_signatory": {"name":"Sourav Kumar","id_type":"PAN","id_no_masked":"ABCDE1234F"},
+     "main_objects":"Manufacture of Ayurvedic products",
+     "ocr_confidence":0.92
+   }
+ }'
+
+
+curl -X POST http://localhost:8000/api/v1/verify/board-resolution \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: some-strong-key" \
+  -d '{
+    "request_id":"br-1001",
+    "submitted_by":"frontend-1",
+    "doc_type":"BOARD_RES",
+    "extracted": {
+      "resolution_no":"BR-2024-001",
+      "resolution_date":"2024-04-20",
+      "purpose":"Authorize opening of manufacturing unit",
+      "authorized_person": {"name":"Sourav Kumar", "id_type":"PAN", "id_no_masked":"ABCDE1234F"},
+      "ocr_confidence":0.96
+    }
+  }'

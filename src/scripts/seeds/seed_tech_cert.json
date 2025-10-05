@@ -1,0 +1,34 @@
+[
+  {
+    "doc_type": "TECH_CERT",
+    "raw_id": "BAMS-WB-12345",
+    "id_masked": "BAMS-12345",
+    "canonical_name": "dr ramesh kumar",
+    "raw": {
+      "name": "Dr. Ramesh Kumar",
+      "registration_no": "BAMS-WB-12345",
+      "council_name": "West Bengal Ayurvedic Council",
+      "qualification": "BAMS",
+      "issue_date": "2012-05-10",
+      "valid_upto": "2027-05-09"
+    },
+    "dob": "1988-06-01",
+    "source": "seed_2025_10_07"
+  },
+  {
+    "doc_type": "TECH_CERT",
+    "raw_id": "BHMS-DL-67890",
+    "id_masked": "BHMS-67890",
+    "canonical_name": "dr priya singh",
+    "raw": {
+      "name": "Dr. Priya Singh",
+      "registration_no": "BHMS-DL-67890",
+      "council_name": "Delhi Homoeopathy Council",
+      "qualification": "BHMS",
+      "issue_date": "2016-08-20",
+      "valid_upto": "2026-08-19"
+    },
+    "dob": "1990-02-14",
+    "source": "seed_2025_10_07"
+  }
+]
