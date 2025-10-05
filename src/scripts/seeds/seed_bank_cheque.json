@@ -1,0 +1,20 @@
+[
+  {
+    "doc_type": "BANK_CHEQUE",
+    "raw_id": "BANK-AXIS-ACC-001",
+    "id_masked": "XXXXXX1234",
+    "canonical_name": "sourav kumar",
+    "raw": { "account_holder_name": "Sourav Kumar", "bank_name": "Axis Bank", "branch": "MG Road, Kolkata", "ifsc": "UTIB0000123", "cheque_number": "000123", "cheque_date": "2025-07-15" },
+    "address": "123 MG Road, Kolkata, West Bengal",
+    "source": "seed_2025_10_14"
+  },
+  {
+    "doc_type": "BANK_CHEQUE",
+    "raw_id": "BANK-HDFC-ACC-002",
+    "id_masked": "XXXXXX9876",
+    "canonical_name": "ram singh",
+    "raw": { "account_holder_name": "Ram Singh", "bank_name": "HDFC Bank", "branch": "Park Street, Kolkata", "ifsc": "HDFC0000456", "cheque_number": "001234", "cheque_date": "2025-05-10" },
+    "address": "45 Park Street, Kolkata, West Bengal",
+    "source": "seed_2025_10_14"
+  }
+]

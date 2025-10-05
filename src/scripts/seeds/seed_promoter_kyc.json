@@ -1,0 +1,28 @@
+[
+  {
+    "doc_type": "PROMOTER_KYC",
+    "raw_id": "PAN-ABCDE1234F",
+    "id_masked": "ABCDE1234F",
+    "canonical_name": "sourav kumar",
+    "dob": "1999-05-01",
+    "address": "Kolkata, West Bengal",
+    "raw": {
+      "id_type": "PAN",
+      "contact": { "phone": "9876543210", "email": "sourav@example.com" }
+    },
+    "source": "seed_2025_10_12"
+  },
+  {
+    "doc_type": "PROMOTER_KYC",
+    "raw_id": "PAN-PQRST9876M",
+    "id_masked": "PQRST9876M",
+    "canonical_name": "ram singh",
+    "dob": "1985-02-02",
+    "address": "New Delhi, Delhi",
+    "raw": {
+      "id_type": "PAN",
+      "contact": { "phone": "9123456780", "email": "ram@example.com" }
+    },
+    "source": "seed_2025_10_12"
+  }
+]

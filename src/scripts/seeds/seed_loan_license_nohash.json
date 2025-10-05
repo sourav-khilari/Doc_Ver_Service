@@ -1,0 +1,99 @@
+[
+  {
+    "doc_type": "INCORP",
+    "raw_id": "INC-TEST-001",
+    "id_masked": "INCP-001",
+    "canonical_name": "sourav ayush pvt ltd",
+    "raw": {
+      "entity_name": "Sourav Ayush Pvt Ltd",
+      "registration_no": "U12345WB2023PTC0001",
+      "date_of_incorporation": "2023-03-01",
+      "registered_office_address": "123 MG Road, Kolkata"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "GST",
+    "raw_id": "GST-TEST-001",
+    "id_masked": "GST-001",
+    "canonical_name": "sourav ayush pvt ltd",
+    "raw": {
+      "gstin": "19ABCDE1234F1Z5",
+      "registration_no": "19ABCDE1234F1Z5",
+      "trade_name": "Sourav Ayush"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "LOAN_AGREEMENT",
+    "raw_id": "AGREE-001",
+    "id_masked": "AG-001",
+    "canonical_name": "loan agreement - sourav ayush & abc contract mfr",
+    "raw": {
+      "agreement_no": "AG-2025-001",
+      "agreement_title": "Loan manufacturing agreement between Sourav Ayush and ABC Contract Mfr",
+      "signed_date": "2025-04-01"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "INCORP",
+    "raw_id": "INC-CM-001",
+    "id_masked": "CM-INCP-001",
+    "canonical_name": "abc contract manufacturing pvt ltd",
+    "raw": {
+      "entity_name": "ABC Contract Manufacturing Pvt Ltd",
+      "registration_no": "U99999DL2020PTC9999",
+      "registered_office_address": "Plot 7, Industrial Area, Delhi"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "MANUFACTURING_LICENSE",
+    "raw_id": "MFR-LIC-001",
+    "id_masked": "MFR-LIC-001",
+    "canonical_name": "ABC Contract Manufacturing GMP",
+    "raw": {
+      "certificate_no": "MFG-2023-AX123",
+      "scope": "Ayurvedic formulations",
+      "issue_date": "2023-02-01",
+      "valid_upto": "2026-02-01"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "GMP",
+    "raw_id": "GMP-ABC-001",
+    "id_masked": "GMP-001",
+    "canonical_name": "ABC QC Lab",
+    "raw": {
+      "certificate_no": "GMP-2023-ABC-001",
+      "scheme_name": "Schedule T",
+      "equipment_list": ["Autoclave","Weighing balance"]
+    },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "PRODUCT_DOSSIER",
+    "raw_id": "PROD-001",
+    "id_masked": "PROD-001",
+    "canonical_name": "Herbal Digestive Syrup",
+    "raw": {
+      "product_code": "AYU-P-001",
+      "product_name": "Herbal Digestive Syrup",
+      "mfr_formula_ref": "MF-AYU-001"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "PROMOTER_KYC",
+    "raw_id": "PAN-ABCDE1234F",
+    "id_masked": "ABCDE1234F",
+    "canonical_name": "sourav kumar",
+    "raw": {
+      "id_type": "PAN",
+      "id_no_masked": "ABCDE1234F"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  }
+]

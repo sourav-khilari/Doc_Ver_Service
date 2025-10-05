@@ -24,6 +24,16 @@ import { verifyMoaHandler } from '../controllers/verifyMoaController.js';
 import { verifyMoaSchema } from '../validation/verifyMoaSchema.js';
 import { verifyBoardResHandler } from '../controllers/verifyBoardResController.js';
 import { verifyBoardResSchema } from '../validation/verifyBoardResSchema.js';
+import { verifyPromoterKycHandler } from '../controllers/verifyPromoterKycController.js';
+import { verifyPromoterKycSchema } from '../validation/verifyPromoterKycSchema.js';
+import { verifyUtilityHandler } from '../controllers/verifyUtilityController.js';
+import { verifyUtilitySchema } from '../validation/verifyUtilitySchema.js';
+import { verifyBankChequeHandler } from '../controllers/verifyBankChequeController.js';
+import { verifyBankChequeSchema } from '../validation/verifyBankChequeSchema.js';
+import { verifyPassportHandler } from '../controllers/verifyPassportController.js';
+import { verifyPassportSchema } from '../validation/verifyPassportSchema.js';
+import { verifyLoanLicenseHandler } from '../controllers/verifyLoanLicenseController.js';
+import { verifyLoanLicenseSchema } from '../validation/verifyLoanLicenseSchema.js';
 
 const router = express.Router();
 
@@ -42,6 +52,11 @@ router.post('/verify/gmp', validate(verifyGmpSchema), verifyGmpHandler);
 router.post('/verify/product-dossier', validate(verifyProductSchema), verifyProductHandler);
 router.post('/verify/moa', validate(verifyMoaSchema), verifyMoaHandler);
 router.post('/verify/board-resolution', validate(verifyBoardResSchema), verifyBoardResHandler);
+router.post('/verify/promoter-kyc', validate(verifyPromoterKycSchema), verifyPromoterKycHandler);
+router.post('/verify/utility-bill', validate(verifyUtilitySchema), verifyUtilityHandler);
+router.post('/verify/bank-cheque', validate(verifyBankChequeSchema), verifyBankChequeHandler);
+router.post('/verify/passport', validate(verifyPassportSchema), verifyPassportHandler);
+router.post('/verify/loan-license', validate(verifyLoanLicenseSchema), verifyLoanLicenseHandler);
 
 // Export router to mount in app.js
 export default router;

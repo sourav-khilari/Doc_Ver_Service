@@ -1,0 +1,38 @@
+[
+  {
+    "doc_type": "PASSPORT",
+    "raw_id": "P-IND-AB1234567",
+    "id_masked": "AB1234567",
+    "canonical_name": "sourav kumar",
+    "raw": {
+      "name": "Sourav Kumar",
+      "passport_no": "AB1234567",
+      "nationality": "India",
+      "gender": "M",
+      "issue_date": "2019-04-10",
+      "expiry_date": "2029-04-09",
+      "place_of_issue": "Kolkata"
+    },
+    "dob": "1999-05-01",
+    "expiry_date": "2029-04-09",
+    "source": "seed_2025_10_15"
+  },
+  {
+    "doc_type": "PASSPORT",
+    "raw_id": "P-IND-XY9876543",
+    "id_masked": "XY9876543",
+    "canonical_name": "ram singh",
+    "raw": {
+      "name": "Ram Singh",
+      "passport_no": "XY9876543",
+      "nationality": "India",
+      "gender": "M",
+      "issue_date": "2018-06-12",
+      "expiry_date": "2028-06-11",
+      "place_of_issue": "New Delhi"
+    },
+    "dob": "1985-02-02",
+    "expiry_date": "2028-06-11",
+    "source": "seed_2025_10_15"
+  }
+]

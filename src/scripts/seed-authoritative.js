@@ -45,7 +45,7 @@ async function seed(filePath, mongoUri) {
 
 // CLI
 if (process.argv[1] && process.argv[1].endsWith('seed-authoritative.js')) {
-  const fileArg = process.argv.find(a => a.startsWith('--file=')) || '--file=./src/scripts/seeds/seed_pan.json';
+  const fileArg = process.argv.find(a => a.startsWith('--file=')) || '--file=./src/scripts/seeds/seed_loan_license_nohash.json';
   const filePath = fileArg.split('=')[1];
   const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/ayush_verifier';
   seed(filePath, MONGO_URI).catch(err => {

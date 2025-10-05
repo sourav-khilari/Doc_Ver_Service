@@ -1,0 +1,20 @@
+[
+  {
+    "doc_type": "UTILITY",
+    "raw_id": "UTL-ELEC-0001",
+    "id_masked": "ACC-XXXX-1234",
+    "canonical_name": "sourav kumar",
+    "address": "123 MG Road, Kolkata, West Bengal",
+    "raw": { "consumer_name": "Sourav Kumar", "billing_date": "2025-08-01", "bill_type": "electricity", "amount": 1450 },
+    "source": "seed_2025_10_13"
+  },
+  {
+    "doc_type": "UTILITY",
+    "raw_id": "UTL-WTR-0002",
+    "id_masked": "ACC-XXXX-9876",
+    "canonical_name": "ram singh",
+    "address": "45 Park Street, Kolkata, West Bengal",
+    "raw": { "consumer_name": "Ram Singh", "billing_date": "2025-06-15", "bill_type": "water", "amount": 300 },
+    "source": "seed_2025_10_13"
+  }
+]

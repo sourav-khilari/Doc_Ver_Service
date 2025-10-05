@@ -129,3 +129,131 @@ curl -X POST http://localhost:8000/api/v1/verify/board-resolution \
       "ocr_confidence":0.96
     }
   }'
+
+
+curl -X POST http://localhost:8000/api/v1/verify/promoter-kyc \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: some-strong-key" \
+  -d '{
+    "request_id":"prom-1001",
+    "submitted_by":"frontend-1",
+    "doc_type":"PROMOTER_KYC",
+    "extracted": {
+      "name":"Sourav Kumar",
+      "id_type":"PAN",
+      "id_no_masked":"ABCDE1234F",
+      "dob":"1999-05-01",
+      "address":"Kolkata, West Bengal",
+      "ocr_confidence":0.95
+    }
+  }'
+
+curl -X POST http://localhost:8000/api/v1/verify/utility-bill \
+ -H "Content-Type: application/json" \
+ -H "x-api-key: some-strong-key" \
+ -d '{
+   "request_id":"util-1001",
+   "submitted_by":"frontend-1",
+   "doc_type":"UTILITY",
+   "extracted": {
+     "consumer_name":"Sourav Kumar",
+     "consumer_account_no_masked":"ACC-XXXX-1234",
+     "address":"123 MG Road, Kolkata, West Bengal",
+     "billing_date":"2025-08-01",
+     "bill_type":"electricity",
+     "ocr_confidence":0.94
+   }
+ }'
+
+ curl -X POST http://localhost:8000/api/v1/verify/bank-cheque \
+ -H "Content-Type: application/json" \
+ -H "x-api-key: some-strong-key" \
+ -d '{
+   "request_id":"bank-1001",
+   "submitted_by":"frontend-1",
+   "doc_type":"BANK_CHEQUE",
+   "extracted": {
+     "account_holder_name":"Sourav Kumar",
+     "account_no_masked":"XXXXXX1234",
+     "ifsc":"UTIB0000123",
+     "bank_name":"Axis Bank",
+     "cheque_date":"2025-07-15",
+     "ocr_confidence":0.93
+   }
+ }'
+
+curl -X POST http://localhost:8000/api/v1/verify/passport \
+ -H "Content-Type: application/json" \
+ -H "x-api-key: some-strong-key" \
+ -d '{
+   "request_id":"pass-1001",
+   "submitted_by":"frontend-1",
+   "doc_type":"PASSPORT",
+   "extracted": {
+     "passport_no_masked":"AB1234567",
+     "name":"Sourav Kumar",
+     "dob":"1999-05-01",
+     "ocr_confidence":0.95
+   }
+ }'
+
+
+curl -X POST http://localhost:8000/api/v1/verify/manufacturing-license \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: some-strong-key" \
+  -d '{
+    "request_id":"manuf-2002",
+    "submitted_by":"frontend-1",
+    "doc_type":"MANUFACTURING_LICENSE",
+    "extracted": {
+      "sector":"HOMOEOPATHY",
+      "license_type":"LOAN_LICENSE",
+      "inc_id_hash":"<inc_id_hash_here>",
+      "gst_id_hash":"<gst_id_hash_here>",
+      "lease_id_hash":"<lease_id_hash_here>",
+      "tech_staff_ids":["<tech_id_hash_1>"],
+      "product_id_hashes":["<product_id_hash_1>"],
+      "noc_id_hashes":["<fire_noc_hash>"],
+      "bundle_ocr_confidence": 0.80
+    }
+  }'
+
+
+curl -X POST http://localhost:8000/api/v1/verify/loan-license \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: some-strong-key" \
+  -d '{
+    "request_id":"loan-3002",
+    "submitted_by":"frontend-1",
+    "doc_type":"LOAN_LICENSE",
+    "extracted": {
+      "applicant_inc_id_hash":"<inc_id_hash_here>",
+      "agreement_document_hash":"<agreement_doc_hash_here>",
+      "cm_incorp_id_hash":"<cm_inc_hash_here>",
+      "product_id_hashes":["<product_hash_1>"],
+      "bundle_ocr_confidence":0.72
+    }
+  }'
+
+
+curl -X POST http://localhost:8000/api/v1/verify/loan-license \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: some-strong-key" \
+  -d '{
+    "request_id":"loan-nohash-1001",
+    "submitted_by":"frontend-1",
+    "doc_type":"LOAN_LICENSE",
+    "extracted":{
+      "applicant_incorporation_no":"U12345WB2023PTC0001",
+      "agreement_number":"AG-2025-001",
+      "cm_incorporation_no":"U99999DL2020PTC9999",
+      "cm_manufacturer_license_no":"MFG-2023-AX123",
+      "cm_gmp_certificate_no":"GMP-2023-ABC-001",
+      "product_codes":["AYU-P-001"],
+      "tech_staff_pan_masked":["ABCDE1234F"],
+      "agreement_signed_date":"2025-04-01",
+      "agreement_effective_from":"2025-04-15",
+      "agreement_effective_to":"2026-04-14",
+      "bundle_ocr_confidence":0.88
+    }
+  }'
