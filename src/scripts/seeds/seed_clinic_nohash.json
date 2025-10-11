@@ -1,0 +1,64 @@
+[
+  {
+    "doc_type": "CLINICAL_REG",
+    "raw_id": "CLINREG-001",
+    "id_masked": "CLREG-001",
+    "canonical_name": "sourav ayush clinic reg",
+    "raw": {
+      "form_name": "State Clinical Registration Form A",
+      "registration_no": "CLIN-DEL-2024-001",
+      "clinic_name": "Sourav Ayush Clinic",
+      "issue_date": "2024-05-10"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "OCCUPANCY",
+    "raw_id": "OCC-001",
+    "id_masked": "OCC-001",
+    "canonical_name": "occupancy - 123 mg road",
+    "raw": {
+      "occupancy_certificate_no": "OCC-2020-1234",
+      "address": "123 MG Road, Kolkata"
+    },
+    "address": "123 MG Road, Kolkata",
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "PROMOTER_KYC",
+    "raw_id": "PAN-ABCDE1234F",
+    "id_masked": "ABCDE1234F",
+    "canonical_name": "dr ramesh kumar",
+    "raw": { "id_type": "PAN", "id_no_masked": "ABCDE1234F", "name": "Dr. Ramesh Kumar" },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "TECH_CERT",
+    "raw_id": "TECH-BAMS-001",
+    "id_masked": "BAMS-1234",
+    "canonical_name": "dr ramesh kumar",
+    "raw": {
+      "name": "Dr. Ramesh Kumar",
+      "registration_no": "BAMS-WB-1234",
+      "council_name": "West Bengal Ayurvedic Council",
+      "qualification": "BAMS"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "BIO_NOC",
+    "raw_id": "BIO-001",
+    "id_masked": "BIO-001",
+    "canonical_name": "bio-waste-operator-abc",
+    "raw": { "operator_name": "ABC Bio Waste", "authorization_no": "BIO-OP-2024-001", "valid_upto": "2026-12-31" },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "FIRE_NOC",
+    "raw_id": "FIRE-001",
+    "id_masked": "FIRE-001",
+    "canonical_name": "fire-noc-kolkata",
+    "raw": { "authority_name": "Kolkata Fire Dept", "certificate_no": "FIRE-2024-789", "valid_upto": "2027-01-01" },
+    "source": "seed_nohash_2025_10_XX"
+  }
+]

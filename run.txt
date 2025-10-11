@@ -257,3 +257,47 @@ curl -X POST http://localhost:8000/api/v1/verify/loan-license \
       "bundle_ocr_confidence":0.88
     }
   }'
+
+
+curl -X POST http://localhost:8000/api/v1/verify/clinic \
+ -H "Content-Type: application/json" \
+ -H "x-api-key: some-strong-key" \
+ -d '{
+   "request_id":"clinic-5001",
+   "submitted_by":"frontend-1",
+   "doc_type":"CLINIC",
+   "extracted":{
+     "sector":"AYURVEDA",
+     "clinic_type":"CLINIC",
+     "clinical_registration_no":"CLIN-DEL-2024-001",
+     "incorporation_no":"U12345WB2023PTC0001",
+     "premises_address":"123 MG Road, Kolkata",
+     "occupancy_certificate_no":"OCC-2020-1234",
+     "practitioners":[
+       {"name":"Dr. Ramesh Kumar","registration_no_masked":"BAMS-1234","council_name":"West Bengal Ayurvedic Council","qualification":"BAMS"}
+     ],
+     "equipment_list":["Panchakarma table","Autoclave"],
+     "sops_present":true,
+     "consent_template_present":true,
+     "bio_med_waste_authorization_no":"BIO-OP-2024-001",
+     "fire_noc_no":"FIRE-2024-789",
+     "ocr_confidence":0.92
+   }
+ }'
+
+
+curl -X POST http://localhost:8000/api/v1/verify/trademark \
+ -H "Content-Type: application/json" \
+ -H "x-api-key: some-strong-key" \
+ -d '{
+  "request_id":"tm-1001",
+  "submitted_by":"frontend-1",
+  "doc_type":"TRADEMARK",
+  "extracted":{
+    "registration_no":"TM-2020-12345",
+    "mark_name":"Herbal Digest",
+    "class":"5",
+    "owner_name":"Sourav Ayush Pvt Ltd",
+    "ocr_confidence":0.95
+  }
+}'

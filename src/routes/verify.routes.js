@@ -34,6 +34,10 @@ import { verifyPassportHandler } from '../controllers/verifyPassportController.j
 import { verifyPassportSchema } from '../validation/verifyPassportSchema.js';
 import { verifyLoanLicenseHandler } from '../controllers/verifyLoanLicenseController.js';
 import { verifyLoanLicenseSchema } from '../validation/verifyLoanLicenseSchema.js';
+import { verifyClinicHandlerNoHash } from "../controllers/verifyClinicController.nohash.js";
+import { verifyClinicSchema } from "../validation/verifyClinicSchema.nohash.js";
+import { verifyTrademarkHandlerNoHash } from "../controllers/verifyTrademarkController.nohash.js";
+import { verifyTrademarkSchema } from "../validation/verifyTrademarkSchema.nohash.js";
 
 const router = express.Router();
 
@@ -57,6 +61,8 @@ router.post('/verify/utility-bill', validate(verifyUtilitySchema), verifyUtility
 router.post('/verify/bank-cheque', validate(verifyBankChequeSchema), verifyBankChequeHandler);
 router.post('/verify/passport', validate(verifyPassportSchema), verifyPassportHandler);
 router.post('/verify/loan-license', validate(verifyLoanLicenseSchema), verifyLoanLicenseHandler);
+router.post("/verify/clinic", validate(verifyClinicSchema), verifyClinicHandlerNoHash);
+router.post("/verify/trademark", validate(verifyTrademarkSchema), verifyTrademarkHandlerNoHash);
 
 // Export router to mount in app.js
 export default router;

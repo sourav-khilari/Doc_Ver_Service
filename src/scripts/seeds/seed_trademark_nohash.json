@@ -1,0 +1,36 @@
+[
+  {
+    "doc_type": "TRADEMARK",
+    "raw_id": "TM-001",
+    "id_masked": "TM-001",
+    "canonical_name": "Herbal Digest",
+    "raw": {
+      "mark_name": "Herbal Digest",
+      "registration_no": "TM-2020-12345",
+      "application_no": "APPL-2019-555",
+      "class": "5",
+      "owner_name": "Sourav Ayush Pvt Ltd",
+      "status": "registered",
+      "issue_date": "2020-08-20",
+      "expiry_date": "2030-08-19"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "TRADEMARK",
+    "raw_id": "TM-002",
+    "id_masked": "TM-002",
+    "canonical_name": "Joint Relief",
+    "raw": {
+      "mark_name": "Joint Relief",
+      "registration_no": "TM-2018-98765",
+      "application_no": "APPL-2017-888",
+      "class": "5",
+      "owner_name": "Ram Remedies",
+      "status": "expired",
+      "issue_date": "2018-01-10",
+      "expiry_date": "2023-01-09"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  }
+]
