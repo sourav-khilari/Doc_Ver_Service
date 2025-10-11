@@ -1,0 +1,41 @@
+[
+  {
+    "doc_type": "ELECTRICITY_BILL",
+    "raw_id": "EBILL-001",
+    "id_masked": "XXXXXX1234",
+    "canonical_name": "sourav ayush pvt ltd electricity bill",
+    "raw": {
+      "consumer_name": "Sourav Ayush Pvt Ltd",
+      "account_no": "ACCT-000123456",
+      "service_connection_no": "SC-DEL-2025-0001",
+      "meter_no": "MTR-987654",
+      "distributor_name": "Kolkata Electricity Supply Co",
+      "billing_date": "2025-09-20",
+      "billing_period_from": "2025-08-20",
+      "billing_period_to": "2025-09-19",
+      "bill_number": "BILL-2025-009",
+      "bill_amount": 45230.50,
+      "energy_kwh": 2150,
+      "previous_month_kwh": 1980,
+      "sanctioned_load_kw": 50,
+      "consumer_category": "LT Commercial",
+      "address": "123 MG Road, Kolkata"
+    },
+    "address": "123 MG Road, Kolkata",
+    "source": "seed_nohash_2025_10_XX"
+  },
+  {
+    "doc_type": "DISCOM",
+    "raw_id": "DISCOM-DEL-001",
+    "id_masked": "DISCOM-001",
+    "canonical_name": "Kolkata Electricity Supply Co",
+    "raw": {
+      "distributor_name": "Kolkata Electricity Supply Co",
+      "registration_no": "DISCOM-KOL-2020-01",
+      "contact": "support@kespco.example"
+    },
+    "source": "seed_nohash_2025_10_XX"
+  }
+]
+
+

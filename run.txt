@@ -301,3 +301,32 @@ curl -X POST http://localhost:8000/api/v1/verify/trademark \
     "ocr_confidence":0.95
   }
 }'
+
+
+
+
+curl -X POST http://localhost:8000/api/v1/verify/electricity-bill \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: some-strong-key" \
+  -d '{
+    "request_id":"ebill-1001",
+    "submitted_by":"frontend-1",
+    "doc_type":"ELECTRICITY_BILL",
+    "extracted":{
+      "consumer_name":"Sourav Ayush Pvt Ltd",
+      "consumer_account_no_masked":"XXXXXX1234",
+      "service_connection_no":"SC-DEL-2025-0001",
+      "meter_no":"MTR-987654",
+      "distributor_name":"Kolkata Electricity Supply Co",
+      "billing_date":"2025-09-20",
+      "billing_period_from":"2025-08-20",
+      "billing_period_to":"2025-09-19",
+      "bill_amount":45230.5,
+      "energy_kwh":2150,
+      "sanctioned_load_kw":50,
+      "consumer_category":"LT Commercial",
+      "address":"123 MG Road, Kolkata",
+      "bill_number":"BILL-2025-009",
+      "ocr_confidence":0.95
+    }
+  }'

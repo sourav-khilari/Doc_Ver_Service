@@ -38,6 +38,8 @@ import { verifyClinicHandlerNoHash } from "../controllers/verifyClinicController
 import { verifyClinicSchema } from "../validation/verifyClinicSchema.nohash.js";
 import { verifyTrademarkHandlerNoHash } from "../controllers/verifyTrademarkController.nohash.js";
 import { verifyTrademarkSchema } from "../validation/verifyTrademarkSchema.nohash.js";
+import { verifyElectricityHandlerNoHash } from "../controllers/verifyElectricityController.nohash.js";
+import { verifyElectricitySchema } from "../validation/verifyElectricitySchema.nohash.js";
 
 const router = express.Router();
 
@@ -63,6 +65,7 @@ router.post('/verify/passport', validate(verifyPassportSchema), verifyPassportHa
 router.post('/verify/loan-license', validate(verifyLoanLicenseSchema), verifyLoanLicenseHandler);
 router.post("/verify/clinic", validate(verifyClinicSchema), verifyClinicHandlerNoHash);
 router.post("/verify/trademark", validate(verifyTrademarkSchema), verifyTrademarkHandlerNoHash);
+router.post("/verify/electricity-bill", validate(verifyElectricitySchema), verifyElectricityHandlerNoHash);
 
 // Export router to mount in app.js
 export default router;
