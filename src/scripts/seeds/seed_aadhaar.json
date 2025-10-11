@@ -1,7 +1,7 @@
 [
   {
     "doc_type": "AADHAAR",
-    "raw_id": "123412341234",
+    "raw_id": "1234",
     "id_masked": "XXXX-XXXX-1234",
     "canonical_name": "sourav kumar",
     "dob": "1999-05-01",
