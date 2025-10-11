@@ -1,3 +1,14 @@
+curl -X POST http://localhost:8000/api/v1/verify/pan \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: some-strong-key" \
+  -d '{
+    "request_id":"app-1001",
+    "submitted_by":"frontend-1",
+    "doc_type":"PAN",
+    "extracted": { "pan":"ABCDE1234F", "name":"Sourav Kumar", "dob":"1999-05-01", "ocr_confidence":0.95 }
+  }'
+
+
 curl -X POST http://localhost:8000/api/verify/lease \
   -H "Content-Type: application/json" \
   -H "x-api-key: some-strong-key" \

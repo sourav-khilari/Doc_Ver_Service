@@ -1,1 +1,1 @@
-export const DB_NAME = "ayush_verifier"
+export const DB_NAME = "AYUSH_DocVerification"

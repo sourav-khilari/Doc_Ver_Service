@@ -4,12 +4,13 @@ import path from 'path';
 import mongoose from 'mongoose';
 import AuthoritativeRecord from '../models/AuthoritativeRecord.js';
 import { normalizeId, normalizeName, sha256Hex } from '../utils/hash.js';
+import { DB_NAME } from '../constants.js';
 
 async function seed(filePath, mongoUri) {
   const absPath = path.isAbsolute(filePath) ? filePath : path.resolve(process.cwd(), filePath);
   if (!fs.existsSync(absPath)) throw new Error(`Seed file not found: ${absPath}`);
 
-  await mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
+  await mongoose.connect(`${mongoUri}/${DB_NAME}`, { useNewUrlParser: true, useUnifiedTopology: true });
 
   const raw = JSON.parse(fs.readFileSync(absPath, 'utf8'));
   if (!Array.isArray(raw)) throw new Error('Seed file must contain a JSON array');
@@ -47,7 +48,8 @@ async function seed(filePath, mongoUri) {
 if (process.argv[1] && process.argv[1].endsWith('seed-authoritative.js')) {
   const fileArg = process.argv.find(a => a.startsWith('--file=')) || '--file=./src/scripts/seeds/seed_loan_license_nohash.json';
   const filePath = fileArg.split('=')[1];
-  const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/ayush_verifier';
+  console.log('Seeding from file:',process.env.MONGO_URI );
+  const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://anishpanja1999_db_user:a86JiIsBXbPJEfLa@cluster0.xwoffss.mongodb.net';
   seed(filePath, MONGO_URI).catch(err => {
     console.error(err);
     process.exit(1);
