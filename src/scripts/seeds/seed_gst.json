@@ -1,24 +1,24 @@
 [
   {
     "doc_type": "GST",
-    "raw_id": "19ABCDE1234F1Z5",
-    "id_masked": "19ABCDE1234F1Z5",
-    "canonical_name": "sourav ayush llp",
-    "trade_name": "sourav ayush",
+    "raw_id": "06AATFK8276B1ZZ",
+    "id_masked": "06AATFK8276B1ZZ",
+    "canonical_name": "arnab ayush llp",
+    "trade_name": "arnab ayush",
     "state_jurisdiction": "West Bengal",
-    "dob": "2020-08-01",
-    "principal_place_address": "Kolkata, West Bengal",
+    "dob": "2021-07-13",
+    "principal_place_address": "Techpark, Block DP, Plot 6, Salt Lake Sector V, Bidhannagar, Kolkata",
     "source": "seed_2025_10_05"
   },
   {
     "doc_type": "GST",
-    "raw_id": "07PQRST9876M1Z2",
-    "id_masked": "07PQRST9876M1Z2",
-    "canonical_name": "ram wellness private limited",
-    "trade_name": "ram wellness",
-    "state_jurisdiction": "Delhi",
+    "raw_id": "07ACZPK9220B1ZG",
+    "id_masked": "07ACZPK9220B1ZG",
+    "canonical_name": "sarita wellness private limited",
+    "trade_name": "sarita wellness pvt ltd",
+    "state_jurisdiction": "Madhya Pradesh",
     "dob": "2019-03-12",
-    "principal_place_address": "New Delhi, Delhi",
+    "principal_place_address": "Vindhyachal Bhawan, Bhopal,MP",
     "source": "seed_2025_10_05"
   }
 ]

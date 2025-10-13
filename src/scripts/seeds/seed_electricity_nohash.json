@@ -3,9 +3,9 @@
     "doc_type": "ELECTRICITY_BILL",
     "raw_id": "EBILL-001",
     "id_masked": "XXXXXX1234",
-    "canonical_name": "sourav ayush pvt ltd electricity bill",
+    "canonical_name": "arnab ayush pvt ltd electricity bill",
     "raw": {
-      "consumer_name": "Sourav Ayush Pvt Ltd",
+      "consumer_name": "arnab Ayush Pvt Ltd",
       "account_no": "ACCT-000123456",
       "service_connection_no": "SC-DEL-2025-0001",
       "meter_no": "MTR-987654",

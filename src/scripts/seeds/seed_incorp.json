@@ -1,20 +1,20 @@
 [
   {
     "doc_type": "INCORP",
-    "raw_id": "U12345WB2010PTC012345",
-    "id_masked": "U12345WB2010PTC012345",
-    "canonical_name": "sourav ayush llp",
-    "dob": "2010-05-12",
-    "registered_office_address": "Kolkata, West Bengal",
+    "raw_id": "U75302PY2021PLC008199",
+    "id_masked": "U75302PY2021PLC008199",
+    "canonical_name": "arnab ayush llp",
+    "dob": "2021-09-12",
+    "registered_office_address": "Techpark, Block DP, Plot 6, Salt Lake Sector V, Bidhannagar, Kolkata",
     "source": "seed_2025_10_05"
   },
   {
     "doc_type": "INCORP",
-    "raw_id": "A67890DL2005PLC000123",
-    "id_masked": "A67890DL2005PLC000123",
-    "canonical_name": "ram wellness private limited",
-    "dob": "2005-03-20",
-    "registered_office_address": "New Delhi, Delhi",
+    "raw_id": "U03245MP2018PTC456123",
+    "id_masked": "U03245MP2018PTC456123",
+    "canonical_name": "sarita wellness private limited",
+    "dob": "2018-03-12",
+    "registered_office_address": "Vindhyachal Bhawan, Bhopal,MP",
     "source": "seed_2025_10_05"
   }
 ]

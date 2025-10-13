@@ -3,12 +3,12 @@
     "doc_type": "BOARD_RES",
     "raw_id": "BR-AYUSH-001",
     "id_masked": "BR-001",
-    "canonical_name": "sourav ayush llp board resolution 2024",
-    "resolution_no": "BR-2024-001",
-    "resolution_date": "2024-04-20",
+    "canonical_name": "arnab ayush llp board resolution 2024",
+    "resolution_no": "BR-2021-001",
+    "resolution_date": "2021-04-20",
     "purpose": "Authorize opening of manufacturing unit",
     "raw": {
-      "authorized_person": { "name": "Sourav Kumar", "id_type": "PAN", "id_no_masked": "ABCDE1234F" }
+      "authorized_person": { "name": "arnab ghosh", "id_type": "PAN", "id_no_masked": "NILPS5066N" }
     },
     "source": "seed_2025_10_11"
   }

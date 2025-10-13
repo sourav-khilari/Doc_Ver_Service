@@ -1,13 +1,13 @@
 [
   {
     "doc_type": "FIRE_NOC",
-    "raw_id": "FIRE-KOL-2023-001234",
-    "id_masked": "FIRE-2023-1234",
+    "raw_id": "FIRE-KOL-2021-40274",
+    "id_masked": "FIRE-2021-1234",
     "canonical_name": "kolkata fire department",
-    "certificate_no": "FIRE-2023-001234",
-    "issue_date": "2023-03-10",
-    "valid_upto": "2026-03-09",
-    "address": "Fire Brigade HQ, Kolkata",
+    "certificate_no": "FIRE-2021-40274",
+    "issue_date": "2021-12-10",
+    "valid_upto": "2025-12-09",
+    "address": "13D,Mirza Galib Street,kolkata-16",
     "source": "seed_2025_10_06"
   }
 ]
