@@ -3,11 +3,11 @@
     "doc_type": "CLINICAL_REG",
     "raw_id": "CLINREG-001",
     "id_masked": "CLREG-001",
-    "canonical_name": "sourav ayush clinic reg",
+    "canonical_name": "arnab ayush clinic reg",
     "raw": {
       "form_name": "State Clinical Registration Form A",
       "registration_no": "CLIN-DEL-2024-001",
-      "clinic_name": "Sourav Ayush Clinic",
+      "clinic_name": "arnab Ayush Clinic",
       "issue_date": "2024-05-10"
     },
     "source": "seed_nohash_2025_10_XX"

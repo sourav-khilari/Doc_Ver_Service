@@ -3,14 +3,14 @@
     "doc_type": "MOA",
     "raw_id": "MOA-AYUSH-001",
     "id_masked": "MOA-001",
-    "canonical_name": "sourav ayush llp",
+    "canonical_name": "arnab ayush llp",
     "entity_type": "LLP",
     "raw": {
       "directors_partners_list": [
-        { "name": "Sourav Kumar", "id_type": "PAN", "id_no_masked": "ABCDE1234F" },
-        { "name": "Ramesh Gupta", "id_type": "PAN", "id_no_masked": "PQRST9876M" }
+        { "name": "arnab ghosh", "id_type": "PAN", "id_no_masked": "NILPS5066N" },
+        { "name": "ardash kumar", "id_type": "PAN", "id_no_masked": "FKTPS2948F" }
       ],
-      "authorized_signatory": { "name": "Sourav Kumar", "id_type": "PAN", "id_no_masked": "ABCDE1234F" },
+      "authorized_signatory": { "name": "Arnab Ghosh", "id_type": "PAN", "id_no_masked": "NILPS5066N" },
       "main_objects": "Manufacture of Ayurvedic products"
     },
     "source": "seed_2025_10_10"

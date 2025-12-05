@@ -1,13 +1,13 @@
 [
   {
     "doc_type": "BIO_NOC",
-    "raw_id": "BIO-OP-2024-0456",
+    "raw_id": "BIO-OP-2021-0456",
     "id_masked": "BIO-0456",
-    "canonical_name": "city biomedical waste operator",
-    "certificate_no": "BIO-OP-2024-0456",
-    "issue_date": "2024-01-15",
-    "valid_upto": "2027-01-14",
-    "address": "Biomedical Waste Plant, Kolkata",
+    "canonical_name": "Kolkata Municipal Corporation",
+    "certificate_no": "BIO-OP-2021-0456",
+    "issue_date": "2021-01-15",
+    "valid_upto": "2026-01-14",
+    "address": "Dhapa, Sector B, Tangra, Kolkata",
     "source": "seed_2025_10_06"
   }
 ]
