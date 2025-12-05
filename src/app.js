@@ -35,10 +35,10 @@ app.use(rateLimit({
 
 
 //routes import
-import panverify from './routes/verify.routes.js'
+import verifyroutes from './routes/verify.routes.js'
 
 //routes decalaration
-app.use("/api/v1/",panverify)
+app.use("/api/v1/",verifyroutes)
 
 
 
