@@ -1,5 +1,6 @@
 // src/routes/verify.js
 import express from 'express';
+import multer from 'multer';
 import validate from '../middleware/validate.js';
 // import apiKeyAuth from '../middleware/apiKeyAuth.js';
 import { verifyPanHandler } from '../controllers/verifyPanController.js';
@@ -40,9 +41,12 @@ import { verifyTrademarkHandlerNoHash } from "../controllers/verifyTrademarkCont
 import { verifyTrademarkSchema } from "../validation/verifyTrademarkSchema.nohash.js";
 import { verifyElectricityHandlerNoHash } from "../controllers/verifyElectricityController.nohash.js";
 import { verifyElectricitySchema } from "../validation/verifyElectricitySchema.nohash.js";
-
+import {verifyProductQrHandler} from '../controllers/verifyProductQrController.js';
 const router = express.Router();
-
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: { fileSize: 5 * 1024 * 1024 }
+});
 // Protect all verify routes with API key
 
 router.post('/verify/pan', validate(verifyPanSchema), verifyPanHandler);
@@ -66,6 +70,14 @@ router.post('/verify/loan-license', validate(verifyLoanLicenseSchema), verifyLoa
 router.post("/verify/clinic", validate(verifyClinicSchema), verifyClinicHandlerNoHash);
 router.post("/verify/trademark", validate(verifyTrademarkSchema), verifyTrademarkHandlerNoHash);
 router.post("/verify/electricity-bill", validate(verifyElectricitySchema), verifyElectricityHandlerNoHash);
+
+
+
+
+
+
+
+router.post('/verify-image', upload.single('image'),verifyProductQrHandler);
 
 // Export router to mount in app.js
 export default router;

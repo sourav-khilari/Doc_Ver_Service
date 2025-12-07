@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start":"node src/index.js",
+    "start": "node src/index.js",
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,8 +23,11 @@
     "express.js": "^1.0.0",
     "fast-levenshtein": "^3.0.0",
     "helmet": "^8.1.0",
+    "jimp": "^1.6.0",
     "joi": "^18.0.1",
     "mongoose": "^8.19.0",
+    "multer": "^2.0.2",
+    "qrcode-reader": "^1.0.4",
     "uuid": "^13.0.0",
     "winston": "^3.18.3"
   },

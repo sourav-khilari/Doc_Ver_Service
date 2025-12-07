@@ -5,7 +5,7 @@ curl -X POST http://localhost:8000/api/v1/verify/pan \
     "request_id":"app-1001",
     "submitted_by":"frontend-1",
     "doc_type":"PAN",
-    "extracted": { "pan":"ABCDE1234F", "name":"arnab ghosh", "dob":"1985-08-26", "ocr_confidence":0.95 }
+    "extracted": { "pan":"NILPS5066N", "name":"arnab ghosh", "dob":"1985-08-26", "ocr_confidence":0.95 }
   }'
 
 curl -X POST http://localhost:8000/api/v1/verify/aadhaar \

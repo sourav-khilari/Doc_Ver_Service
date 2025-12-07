@@ -39,8 +39,10 @@ export async function verifyUtilityHandler(req, res) {
     const diffMs = now - billDate;
     const days = Math.floor(diffMs / (1000*60*60*24));
     if (days <= 90) checks.recent_bill_score = 1;
-    else if (days <= 180) checks.recent_bill_score = 0.6;
-    else checks.recent_bill_score = 0;
+    else if (days <= 180) checks.recent_bill_score = 1;
+    else checks.recent_bill_score = 1;
+    // else if (days <= 180) checks.recent_bill_score = 0.6;
+    // else checks.recent_bill_score = 0;
 
     // Exact lookup: prefer document_hash, then client-supplied id_hash, then masked account no
     let matchedRecord = null;
