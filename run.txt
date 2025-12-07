@@ -372,3 +372,9 @@ curl -X POST http://localhost:8000/api/v1/verify/electricity-bill \
       "ocr_confidence":0.95
     }
   }'
+
+
+
+curl -X POST http://localhost:8000/api/v1/email-lookup \
+  -H "Content-Type: application/json" \
+  -d '{"aadhar_last4": "3642"}'

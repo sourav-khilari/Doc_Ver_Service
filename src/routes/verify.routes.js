@@ -42,6 +42,10 @@ import { verifyTrademarkSchema } from "../validation/verifyTrademarkSchema.nohas
 import { verifyElectricityHandlerNoHash } from "../controllers/verifyElectricityController.nohash.js";
 import { verifyElectricitySchema } from "../validation/verifyElectricitySchema.nohash.js";
 import {verifyProductQrHandler} from '../controllers/verifyProductQrController.js';
+import { emailLookUpController } from '../controllers/emailLookUpController.js';
+
+
+
 const router = express.Router();
 const upload = multer({
   storage: multer.memoryStorage(),
@@ -71,13 +75,10 @@ router.post("/verify/clinic", validate(verifyClinicSchema), verifyClinicHandlerN
 router.post("/verify/trademark", validate(verifyTrademarkSchema), verifyTrademarkHandlerNoHash);
 router.post("/verify/electricity-bill", validate(verifyElectricitySchema), verifyElectricityHandlerNoHash);
 
-
-
-
-
-
-
 router.post('/verify-image', upload.single('image'),verifyProductQrHandler);
+
+router.post('/email-lookup', emailLookUpController);
+
 
 // Export router to mount in app.js
 export default router;

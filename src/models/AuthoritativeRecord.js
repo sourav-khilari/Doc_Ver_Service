@@ -10,6 +10,7 @@ const AuthoritativeRecordSchema = new Schema({
   id_masked: { type: String },
   canonical_name: { type: String, index: true },           // normalized name
   dob: { type: Date },
+  email: { type: String },
   address: { type: String },
   raw: { type: Schema.Types.Mixed },                       // encrypted in prod if PII
   source: { type: String },
