@@ -75,9 +75,9 @@ router.post("/verify/clinic", validate(verifyClinicSchema), verifyClinicHandlerN
 router.post("/verify/trademark", validate(verifyTrademarkSchema), verifyTrademarkHandlerNoHash);
 router.post("/verify/electricity-bill", validate(verifyElectricitySchema), verifyElectricityHandlerNoHash);
 
-router.post('/verify-image', upload.single('image'),verifyProductQrHandler);
+router.post('/verify/verify-image', upload.single('image'),verifyProductQrHandler);
 
-router.post('/email-lookup', emailLookUpController);
+router.post('/verify/email-lookup', emailLookUpController);
 
 
 // Export router to mount in app.js
